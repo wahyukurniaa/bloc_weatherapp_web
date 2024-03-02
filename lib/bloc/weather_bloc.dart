@@ -15,7 +15,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
   void _getCurrentWeather(
     WeatherFethced event,
-    Emitter<WeatherState> emitter,
+    Emitter<WeatherState> emit,
   ) async {
     emit(WeatherLoading());
     try {
