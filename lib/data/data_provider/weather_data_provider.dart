@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'package:bloc_weatherapp_web/secret.dart';
 
-class weatherDataProvider {
+class WeatherDataProvider {
   Future<String> getCurrentWeather(String cityName) async {
     try {
       final res = await http.get(
